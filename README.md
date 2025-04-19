@@ -1,80 +1,135 @@
 Vietnamese AI Assistant
-Giới thiệu
-Vietnamese AI Assistant là một ứng dụng desktop được phát triển bằng Python và Tkinter, giúp người dùng tương tác với API AI của Google Gemini để thực hiện nhiều tác vụ khác nhau. Ứng dụng có giao diện thân thiện với người dùng, hỗ trợ đa ngôn ngữ (chú trọng tiếng Việt) và có nhiều tính năng hữu ích.
 
-Tính năng chính
+Vietnamese AI Assistant là một ứng dụng desktop được phát triển bằng Python và Tkinter, cho phép người dùng tương tác với API AI của Google Gemini để thực hiện nhiều tác vụ khác nhau. Ứng dụng có giao diện thân thiện, hỗ trợ đa ngôn ngữ (ưu tiên tiếng Việt) và tích hợp nhiều tính năng hữu ích.
+
+✨ Tính Năng Chính
+
 Tóm tắt văn bản: Tóm tắt nội dung từ văn bản hoặc URL website
-Chat với AI: Trò chuyện trực tiếp với mô hình AI của Google Gemini
-Chuyển văn bản thành giọng nói: Đọc văn bản bằng nhiều giọng nói khác nhau
-Tùy chỉnh cài đặt: Cấu hình API, chọn mô hình AI và cài đặt giọng nói
-Yêu cầu hệ thống
-Python 3.7 trở lên
-Các thư viện được liệt kê trong file requirements.txt
-Kết nối internet để sử dụng API của Google Gemini
-API Key từ Google AI Studio (Google Gemini)
-Cài đặt
-Clone repository hoặc tải xuống mã nguồn
 
-Cài đặt các thư viện cần thiết:
+Chat với AI: Trò chuyện trực tiếp với mô hình AI của Google Gemini
+
+Chuyển văn bản thành giọng nói: Đọc văn bản với nhiều giọng nói khác nhau
+
+Tùy chỉnh cài đặt: Cài đặt API, chọn mô hình AI và tùy chỉnh giọng nói
+
+🚀 Yêu Cầu Hệ Thống
+
+Python 3.7 trở lên
+
+Các thư viện được liệt kê trong file requirements.txt
+
+Kế nối internet để sử dụng API của Google Gemini
+
+API Key từ Google AI Studio (Google Gemini)
+
+📅 Cài Đặt
+
+Clone repository hoặc tải mã nguồn về
+
+Cài đặt thư viện cần thiết:
 
 pip install -r requirements.txt
-Tạo file .env trong thư mục gốc của ứng dụng (hoặc thêm API key trong giao diện cài đặt):
+
+Tạo file .env trong thư mục gốc:
 
 GEMINI_API_KEY=your_api_key_here
+
 Chạy ứng dụng:
 
 python app.py
-Hướng dẫn sử dụng
-Tóm tắt văn bản
-Truy cập tab "Tóm tắt văn bản"
-Nhập văn bản cần tóm tắt hoặc URL website
-Nhấn nút "Tóm tắt"
-Kết quả sẽ hiển thị ở phần "Bản tóm tắt"
-Có thể đọc bản tóm tắt bằng cách nhấn nút "Đọc bản tóm tắt"
-Chat với AI
-Truy cập tab "Chat với AI"
-Nhập câu hỏi hoặc yêu cầu vào ô văn bản
-Nhấn nút "Gửi" hoặc phím Enter
-AI sẽ phản hồi và hiển thị trong cửa sổ chat
-Có thể nghe phản hồi bằng cách nhấn nút "Đọc phản hồi"
-Chuyển văn bản thành giọng nói
-Truy cập tab "Chuyển văn bản thành giọng nói"
-Nhập văn bản cần chuyển đổi
-Tùy chỉnh các cài đặt giọng nói (nếu cần)
-Nhấn nút "Đọc" để bắt đầu
-Có thể dừng quá trình bằng nút "Dừng"
-Cài đặt
-Truy cập tab "Cài đặt"
-Cấu hình API key cho Google Gemini
-Chọn mô hình AI phù hợp
-Tùy chỉnh cài đặt giọng nói (ngôn ngữ, giới tính, tốc độ)
-Kiểm tra cài đặt bằng các nút kiểm tra tương ứng
-Cấu trúc mã nguồn
-Ứng dụng được thiết kế theo mô hình module, với mỗi tệp Python đảm nhận một chức năng cụ thể:
 
-app.py: Điểm khởi đầu của ứng dụng, khởi tạo giao diện và các module
-api_manager.py: Quản lý kết nối và tương tác với API của Google Gemini
-voice_manager.py: Quản lý các chức năng text-to-speech
-web_scraper.py: Trích xuất nội dung từ các trang web
-summarizer_module.py: Module tóm tắt văn bản
-chat_module.py: Module trò chuyện với AI
-tts_module.py: Module chuyển văn bản thành giọng nói
-settings_module.py: Module cài đặt ứng dụng
-ui_factory.py: Tạo các thành phần giao diện đồng nhất
-Lấy API Key
-Để sử dụng ứng dụng, bạn cần một API key từ Google AI Studio:
+🔍 Hướng Dẫn Sử Dụng
+
+📄 Tóm Tắt Văn Bản
+
+Truy cập tab "Tóm tắt văn bản"
+
+Nhập văn bản hoặc URL website
+
+Nhấn "Tóm tắt"
+
+Xem kết quả ở phần "Bản tóm tắt"
+
+Nhấn "Đọc bản tóm tắt" để nghe
+
+🧵 Chat Với AI
+
+Truy cập tab "Chat với AI"
+
+Nhập yêu cầu và nhấn "Gửi" hoặc Enter
+
+AI sẽ phản hồi trong cửa sổ chat
+
+Nhấn "Đọc phản hồi" để nghe
+
+🎙️ Chuyển Văn Bản Thành Giọng Nói
+
+Truy cập tab "Chuyển văn bản thành giọng nói"
+
+Nhập văn bản
+
+Tùy chỉnh giọng nói (nếu cần)
+
+Nhấn "Đọc" để nghe
+
+Nhấn "Dừng" để dừng
+
+🔧 Cài Đặt
+
+Truy cập tab "Cài đặt"
+
+Thêm API key của Google Gemini
+
+Chọn mô hình AI phù hợp
+
+Tùy chỉnh ngôn ngữ, giới tính, tốc độ giọng nói
+
+Kiểm tra cài đặt bằng các nút tương ứng
+
+🗃️ Cấu Trúc Mã Nguồn
+
+app.py: Khởi tạo giao diện chính và các module
+
+api_manager.py: Quản lý kết nối API Gemini
+
+voice_manager.py: Xử lý text-to-speech
+
+web_scraper.py: Trích xuất nội dung từ website
+
+summarizer_module.py: Tóm tắt văn bản
+
+chat_module.py: Trò chuyện với AI
+
+tts_module.py: Chuyển đổi văn bản -> giọng nói
+
+settings_module.py: Cài đặt hệ thống
+
+ui_factory.py: Tạo giao diện đồng nhất
+
+🚪 Lấy API Key
 
 Truy cập Google AI Studio
-Đăng nhập bằng tài khoản Google
-Tạo một API key mới
-Sao chép API key và thêm vào ứng dụng thông qua tab Cài đặt
-Xử lý sự cố
-Lỗi API key: Đảm bảo rằng bạn đã nhập API key chính xác và hợp lệ
-Lỗi mạng: Kiểm tra kết nối internet của bạn
-Lỗi giọng nói: Đảm bảo rằng hệ thống của bạn có hỗ trợ text-to-speech
-Ứng dụng không phản hồi: Khởi động lại ứng dụng hoặc kiểm tra tài nguyên hệ thống
-Đóng góp
-Mọi đóng góp đều được hoan nghênh! Vui lòng gửi Pull Request hoặc mở Issue nếu bạn có bất kỳ đề xuất cải tiến nào.
 
-Giấy phép
+Đăng nhập tài khoản Google
+
+Tạo API Key mới
+
+Sao chép và thêm vào file .env hoặc giao diện cài đặt
+
+⚠️ Xử Lý Sự Cố
+
+API Key lỗi: Kiểm tra tính hợp lệ của API Key
+
+Lỗi mạng: Đảm bảo kế nối internet
+
+Giọng nói không hoạt động: Kiểm tra hệ thống có hỗ trợ TTS
+
+Ứng dụng không phản hồi: Khởi động lại hoặc kiểm tra tài nguyên hệ thống
+
+📝 Đóng Góp
+
+Mọi đóng góp đều được hoan nghênh! Hãy gửi Pull Request hoặc mở Issue nếu bạn có ý tưởng cải tiến.
+
+📋 Giấy Phép
+
 Phần mềm này được phân phối theo giấy phép MIT.
